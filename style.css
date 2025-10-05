@@ -15,7 +15,7 @@
 
 #logo {
     position: absolute;
-    top: 10px;
+    top: 3px;
     left: 88px;
     z-index: 1;
 }
@@ -56,6 +56,7 @@
     width: 543px;
     margin: 0 0 10px 0;
     border: 1px solid #CCC;
+    
 }
 
 .block.content{
@@ -273,6 +274,10 @@ h2 {
     float: left;
     margin-right: 10px;
 }
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
 .positions {
     width: 100%;
     border-collapse: collapse;
@@ -340,6 +345,9 @@ ody {
     padding-top: 10px;
     border-top: 1px dashed #CCC;
 }
+.info a, #footer a, .add-comment a {
+    text-decoration: underline;
+}
 .counters {
     width: 90px;
     margin: 30px auto 0;
@@ -391,10 +399,7 @@ ody {
     color: #000;
 }
 
-div#zone_1388947529 {
-    position: relative !important;
-    z-index: 2 !important;
-}    
+   
 
 input, textarea {
     border: 1px solid #CCC;
@@ -419,5 +424,34 @@ input[type="submit" i] {
     border-style: outset;
     border-color: buttonborder;
     border-image: initial;
+}
+.aln {
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border: 1px solid #CCC;
+    background: #EAEAEA;
+    text-align: center;
+    color: #000;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.aln h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+.aln a {
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+a {
+    text-decoration: none;
+    color: #185377;
 }
 
