@@ -19,6 +19,18 @@
     left: 88px;
     z-index: 1;
 }
+#logo h1 span {
+    z-index: 99;
+    position: absolute;
+    top: -9000px;
+    left: -9000px;
+}
+#logo h1 a {
+    display: block;
+    width: 132px;
+    height: 120px;
+    margin: 0 auto;
+}
 
 #header {
     height: 116px;
@@ -85,6 +97,19 @@
     padding: 10px;
     background: #FFF;
 }
+body {
+    text-align: center;
+    background: #FFF url(/img/bg.gif) repeat;
+    font: 70% normal Arial, Verdana, Helvetica, sans-serif;
+}
+.block .content:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+    font-size: 0;
+}
 
 .block.news .info {
     padding-bottom: 10px;
@@ -100,6 +125,32 @@
     width: 240px;
 }
 
+.block {
+    width: 543px;
+    margin: 0 0 10px 0;
+    border: 1px solid #CCC;
+}
+.positions.matches th {
+    text-align: center;
+}
+.positions th {
+    text-align: left;
+    background: #EAEAEA;
+}
+.positions th, .positions td {
+    padding: 2px;
+    vertical-align: top;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    unicode-bidi: isolate;
+}
+
+
 .login input {
     width: 100px;
     margin-bottom: 3px;
@@ -109,10 +160,29 @@
 .login input.btn {
     font-size: 1em;
 }
+input.btn {
+    width: auto;
+    margin: 3px 0;
+    padding: 3px;
+    border: 1px solid #999;
+    border-color: #999 #333 #333 #999;
+    background: #FFF url(/img/input-bg.gif) repeat-x;
+    font-size: 100%;
+    color: #333;
+}
 
 a {
     text-decoration: none;
     color: #185377;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
 }
 
 #sidebar .block.polls .content h4 {
@@ -142,22 +212,79 @@ a {
     clear: both;
     font-size: 0;
 }
+.block h3 {
+    padding: 4px 10px 5px;
+    font-weight: bold;
+}
+.block h2 {
+    font-size: 1.5em;
+}
 .block h2 a, .block h3 a {
     border-bottom: 1px solid #000;
     text-decoration: none;
     color: #000;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.block .info:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+    font-size: 0;
+}
+.block .info {
+    clear: both;
+    padding: 3px 10px;
+    background: #F2F2F2;
+}
+.block h2, .block h3 {
+    padding: 3px 10px;
+    border-bottom: 1px solid #CCC;
+    background: #EAEAEA;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 .block .content img {
     float: left;
     margin-right: 10px;
 }
-.block h2 {
-    font-size: 1.5em;
-}
 .positions {
     width: 100%;
     border-collapse: collapse;
+}
+.block.news h2, .block.news h3 {
+    border: 0;
+    background: none;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
 }
 #leftbar {
     position: absolute;
@@ -178,6 +305,9 @@ div#zone_1388947529 {
     border-top: 1px dashed #CCC;
     background: #E4E4E4;
 }
+ul {
+    list-style-type: disc;
+}
 #nav li a {
     position: relative;
     z-index: 2;
@@ -188,6 +318,11 @@ div#zone_1388947529 {
     text-decoration: none;
     font-weight: bold;
     color: #000;
+}
+ody {
+    text-align: center;
+    background: #FFF url(/img/bg.gif) repeat;
+    font: 70% normal Arial, Verdana, Helvetica, sans-serif;
 }
 #nav li ul {
     list-style: none;
@@ -260,3 +395,29 @@ div#zone_1388947529 {
     position: relative !important;
     z-index: 2 !important;
 }    
+
+input, textarea {
+    border: 1px solid #CCC;
+    font: 120% normal Arial, Verdana, Helvetica, sans-serif;
+}
+
+#site-controls li img {
+    cursor: pointer;
+    background: #FFF;
+}
+
+input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    white-space: pre;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
