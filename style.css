@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#wrapper {
+    position: relative;
+    width: 1030px;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    border-width: 0 1px;
+    background: #FFF;
+    text-align: left;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 88px;
+    z-index: 1;
+}
+
+#header {
+    height: 116px;
+    border-bottom: 15px solid #CE1124;
+}
+
+#container {
+    overflow: hidden;
+    width: 795px;
+    min-height: 700px;
+    margin-left: 180px;
+    padding: 20px;
+    border-left: 15px solid #CE1124;
+}
+
+#content {
+    float: left;
+    width: 545px;
+    min-height: 300px;
+}
+
+.block{
+    width: 543px;
+    margin: 0 0 10px 0;
+    border: 1px solid #CCC;
+}
+
+.block.content{
+    padding: 10px;
+    background: #FFF;
+}
+
+.block.content::after{
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+    font-size: 0;
+}
+.block.info{
+    clear: both;
+    padding: 3px 10px;
+    background: #f2f2f2;
+}
+.block .info p {
+    margin-bottom: 3px;
+}
+
+.block .info .date {
+    float: left;
+    margin: 0;
+}
+.f-r {
+    float: right;
+}
+
+.block.news {
+    border: 1px dashed #CCC;
+    border-width: 0 0 1px;
+}
+
+.block .content {
+    padding: 10px;
+    background: #FFF;
+}
+
+.block.news .info {
+    padding-bottom: 10px;
+    background: none;
+}
+
+#sidebar {
+    float: left;
+    width: 240px;
+    margin-left: 8px;
+}
+#sidebar .block {
+    width: 240px;
+}
+
+.login input {
+    width: 100px;
+    margin-bottom: 3px;
+    padding: 3px;
+    font-size: 1.1em;
+}
+.login input.btn {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #185377;
+}
+
+#sidebar .block.polls .content h4 {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#sidebar .block.polls .content div input {
+    vertical-align: middle;
+}
+#sidebar .block.polls .content div {
+    padding: 1px 0 2px;
+}
+#sidebar .block.polls .content input.btn {
+    margin: 10px 0 5px;
+}
+
+#sidebar .block.polls .content p {
+    margin-bottom: 0;
+}
+#sidebar .block .content p {
+    margin: 5px 0;
+}
+
+.clear {
+    overflow: hidden;
+    clear: both;
+    font-size: 0;
+}
+.block h2 a, .block h3 a {
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.block .content img {
+    float: left;
+    margin-right: 10px;
+}
+.block h2 {
+    font-size: 1.5em;
+}
+.positions {
+    width: 100%;
+    border-collapse: collapse;
+}
+#leftbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    padding: 151px 0 20px;
+    border-right: 15px solid #CE1124;
+}
+div#zone_1388947529 {
+    position: relative !important;
+    z-index: 2 !important;
+}
+#nav {
+    list-style: none;
+}
+#nav li {
+    border-top: 1px dashed #CCC;
+    background: #E4E4E4;
+}
+#nav li a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 140px;
+    padding: 5px 20px;
+    background: url(/img/top-level.gif) no-repeat 8px 60%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+#nav li ul {
+    list-style: none;
+}
+
+#nav li ul a {
+    width: 130px;
+    background: #FFF url(/img/level.gif) no-repeat 18px 60%;
+    padding: 4px 20px 4px 30px;
+    font-weight: normal;
+}
+.partners {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    border-top: 1px dashed #CCC;
+}
+.counters {
+    width: 90px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+#site-controls {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+#site-controls li {
+    display: inline;
+    list-style: none;
+}
+
+#banner {
+    position: absolute;
+    top: 15px;
+    left: 295px;
+    width: 728px;
+    height: 90px;
+    background: #FFF;
+    text-align: center;
+}
+
+#footer p {
+    float: left;
+    margin: 0;
+}
+
+#footer {
+    clear: both;
+    overflow: hidden;
+    padding: 10px;
+    border-top: 1px solid #999;
+    background: #FAFAFA;
+}
+
+#footer .links {
+    float: right;
+}
+#footer a, .add-comment a {
+    text-decoration: underline;
+}
+
+    
+#footer a {
+    color: #000;
+}
+
+div#zone_1388947529 {
+    position: relative !important;
+    z-index: 2 !important;
+}    
